@@ -5,8 +5,8 @@ public class BubbleSort implements Sort {
 	@Override
 	public void sort(Comparable[] array) {
 		// TODO Auto-generated method stub
-		for(int i=0;i<array.length;i++){
-			for(int j=0;j<array.length-1;j++){
+		for(int i=0;i<array.length-1;i++){
+			for(int j=0;j<array.length-1-i;j++){
 				if(array[j].compareTo(array[j+1])>0)
 				{
 					Comparable temp = array[j];

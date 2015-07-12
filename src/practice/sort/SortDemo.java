@@ -35,7 +35,7 @@ public class SortDemo implements Comparable<SortDemo>{
 		int menu = -1;
 		while(menu != 0){
 			Scanner scanner = new Scanner(System.in);
-			System.out.print("¼ÒÆ®ÇÏ°íÀÚ ÇÏ´Â µ¥ÀÌÅÍ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >>");
+			System.out.print("ì†ŒíŠ¸í•˜ê³ ì í•˜ëŠ” ë°ì´í„° ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. >>");
 			int num = scanner.nextInt();
 			if(num < 1)	continue;
 			SortDemo integers[] = new SortDemo[num];
@@ -46,11 +46,11 @@ public class SortDemo implements Comparable<SortDemo>{
 			}
 			printAllValue(integers);
 			
-			System.out.println("1. ¹öºí ¼ÒÆ®");
-			System.out.println("2. ¼±ÅÃ ¼ÒÆ®");
-			System.out.println("3. »ğÀÔ ¼ÒÆ®");
-			System.out.println("4. Äü ¼ÒÆ®");
-			System.out.print("¼ÒÆ®ÇÒ ¾Ë°í¸®ÁòÀ» ¼±ÅÃÇÏ¼¼¿ä. (0: Á¾·á) >>");
+			System.out.println("1. ë²„ë¸” ì†ŒíŠ¸");
+			System.out.println("2. ì„ íƒ ì†ŒíŠ¸");
+			System.out.println("3. ì‚½ì… ì†ŒíŠ¸");
+			System.out.println("4. í€µ ì†ŒíŠ¸");
+			System.out.print("ì†ŒíŠ¸í•  ì•Œê³ ë¦¬ì¦˜ì„ ì„ íƒí•˜ì„¸ìš”. (0: ì¢…ë£Œ) >>");
 			
 			menu = scanner.nextInt();
 			switch(menu){
@@ -74,8 +74,8 @@ public class SortDemo implements Comparable<SortDemo>{
 			sort.sort(integers);
 			long after = System.currentTimeMillis();
 			printAllValue(integers);
-			System.out.println("µ¥ÀÌÅÍ °³¼ö:" + num);
-			System.out.println("¼ÒÆ® ½Ã°£:" + (after - before)/1000.0);
+			System.out.println("ë°ì´í„° ê°œìˆ˜:" + num);
+			System.out.println("ì†ŒíŠ¸ ì‹œê°„:" + (after - before)/1000.0);
 		}
 	}
 }
